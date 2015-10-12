@@ -41,10 +41,11 @@ public class Flipper : MonoBehaviour
 			}
 		}
 	}
-	void onTriggerEnter (Collider other) {
-		if (other.gameObject.tag.Equals ("Ball")) 
+	void OnCollisionEnter (Collision col) {
+		if (col.gameObject.name == "Ball") 
 		{
-			rb.AddRelativeForce(Vector3.forward * thrust);
+			Debug.Log("It hits");
+			col.rigidbody.AddForce(Vector3.back * thrust);
 		}
 	}
 }
