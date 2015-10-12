@@ -11,9 +11,13 @@ public class Flipper : MonoBehaviour
 	private Quaternion finalOrientation;
 	private float t;
 
+	public float thrust;
+	public Rigidbody rb;
+
 	// Use this for initialization
 	void Start () 
 	{
+		rb = GetComponent<Rigidbody>();
 		initialOrientation = transform.rotation;
 		finalOrientation.eulerAngles = new Vector3 (initialOrientation.eulerAngles.x, initialOrientation.eulerAngles.y + maxAngle, initialOrientation.eulerAngles.z);
 	}
@@ -38,10 +42,9 @@ public class Flipper : MonoBehaviour
 		}
 	}
 	void onTriggerEnter (Collider other) {
-		//add force to anything that comes inside
 		if (other.gameObject.tag.Equals ("Ball")) 
 		{
-			//
+			rb.AddRelativeForce(Vector3.forward * thrust);
 		}
 	}
 }
