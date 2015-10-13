@@ -12,12 +12,10 @@ public class Flipper : MonoBehaviour
 	private float t;
 
 	public float thrust;
-	public Rigidbody rb;
 
 	// Use this for initialization
 	void Start () 
 	{
-		rb = GetComponent<Rigidbody>();
 		initialOrientation = transform.rotation;
 		finalOrientation.eulerAngles = new Vector3 (initialOrientation.eulerAngles.x, initialOrientation.eulerAngles.y + maxAngle, initialOrientation.eulerAngles.z);
 	}
@@ -45,7 +43,7 @@ public class Flipper : MonoBehaviour
 		if (col.gameObject.name == "Ball") 
 		{
 			Debug.Log("It hits");
-			col.rigidbody.AddForce(Vector3.back * thrust);
+			col.rigidbody.AddForce(Vector3.forward * thrust);
 		}
 	}
 }
