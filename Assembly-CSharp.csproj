@@ -6,7 +6,7 @@
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
 	<RootNamespace></RootNamespace>
-	<ProjectGuid>{992C5ECE-BAB7-7515-80D2-ED6A81CDA570}</ProjectGuid>
+	<ProjectGuid>{92D198FF-D6C6-8360-4C6E-4B78B96C3573}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<AssemblyName>Assembly-CSharp</AssemblyName>
@@ -45,10 +45,21 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\BallDestroyer.cs" />
      <Compile Include="Assets\Scripts\Bumper.cs" />
-     <Compile Include="Assets\Scripts\Flipper.cs" />
+     <Compile Include="Assets\Scripts\Flipper2.cs" />
+     <Compile Include="Assets\Scripts\Flippers1.cs" />
      <Compile Include="Assets\Scripts\FollowCamera.cs" />
+     <Compile Include="Assets\Scripts\Instructions.cs" />
+     <Compile Include="Assets\Scripts\Keyboard.cs" />
+     <Compile Include="Assets\Scripts\Launcher.cs" />
+     <Compile Include="Assets\Scripts\MainMenu.cs" />
      <Compile Include="Assets\Scripts\ReversibleGravity.cs" />
+     <Compile Include="Assets\Scripts\ScoreDisplay.cs" />
+     <Compile Include="Assets\Scripts\TriangleBumper.cs" />
+     <Compile Include="Assets\Scripts\cameraControl.cs" />
+     <Compile Include="Assets\Scripts\credits.cs" />
+     <Compile Include="Assets\Scripts\flipper.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

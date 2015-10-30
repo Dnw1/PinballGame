@@ -18,7 +18,7 @@ public class ReversibleGravity : MonoBehaviour {
 		Physics.gravity = gravity;
 
 		gravity.x = 0f;
-		gravity.y = -9.81f;
+		gravity.y = -10.81f;
 		gravity.z = -8f;
 	}
 }
