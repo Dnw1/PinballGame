@@ -1,16 +1,18 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ReversibleGravity : MonoBehaviour {
-	
+public class ReversibleGravity : MonoBehaviour
+{
 	Vector3 gravity;
 	// Use this for initialization
-	void Start () {
+	void Start ()
+    {
 		gravity = Physics.gravity;
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+    {
 		//
 	}
 	void FixedUpdate()

@@ -6,7 +6,7 @@
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
 	<RootNamespace></RootNamespace>
-	<ProjectGuid>{992C5ECE-BAB7-7515-80D2-ED6A81CDA570}</ProjectGuid>
+	<ProjectGuid>{1D7448AF-5862-33E3-8B83-8F3C9374FB3C}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<AssemblyName>Assembly-CSharp</AssemblyName>
@@ -47,8 +47,16 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Bumper.cs" />
      <Compile Include="Assets\Scripts\Flipper.cs" />
-     <Compile Include="Assets\Scripts\FollowCamera.cs" />
+     <Compile Include="Assets\Scripts\Launcher.cs" />
      <Compile Include="Assets\Scripts\ReversibleGravity.cs" />
+     <Compile Include="Assets\Scripts\ScoreManager.cs" />
+     <Compile Include="Assets\Scripts\TriangleBumper.cs" />
+     <Compile Include="Assets\Scripts\script1.cs" />
+     <Compile Include="Assets\Scripts\script2.cs" />
+     <Compile Include="Assets\dreamlo\LeaderBoardSample.cs" />
+     <Compile Include="Assets\dreamlo\dreamloLeaderBoard.cs" />
+     <Compile Include="Assets\dreamlo\dreamloPromoCode.cs" />
+     <None Include="Assets\dreamlo\README_FIRST.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

@@ -3,15 +3,18 @@ using System.Collections;
 
 public class Flipper : MonoBehaviour 
 {
-	public float maxAngle = 20.0f;
-	public float flipTime = 1.0f;
-	public string buttonName = "Fire1";
+    [SerializeField]
+	private float maxAngle = 20.0f;
+    [SerializeField]
+	private float flipTime = 1.0f;
+	private string buttonName = "Fire1";
 
 	private Quaternion initialOrientation;
 	private Quaternion finalOrientation;
 	private float t;
 
-	public float thrust;
+    [SerializeField]
+	private float thrust;
 
 	// Use this for initialization
 	void Start () 
@@ -21,15 +24,18 @@ public class Flipper : MonoBehaviour
 	}
 	
 	// Update is called once per frame
-	void Update () 
+	void Update ()
 	{
-		if (Input.GetButton(buttonName)) {
-			transform.rotation = Quaternion.Slerp (initialOrientation, finalOrientation, t / flipTime);
+		if (Input.GetButton(buttonName)) 
+		{
+			transform.rotation = Quaternion.Slerp (initialOrientation, finalOrientation, t/flipTime);
 			t += Time.deltaTime;
-			if (t > flipTime) {
+			if (t > flipTime) 
+			{
 				t = flipTime;
 			}
-		} else 
+		} 
+		else 
 		{
 			transform.rotation = Quaternion.Slerp(initialOrientation, finalOrientation, t/flipTime);
 			t -= Time.deltaTime;
@@ -39,10 +45,11 @@ public class Flipper : MonoBehaviour
 			}
 		}
 	}
-	void OnCollisionEnter (Collision col) {
+	void OnCollisionEnter (Collision col) 
+	{
 		if (col.gameObject.name == "Ball") 
 		{
-			Debug.Log("It hits");
+			//Debug.Log("It hits");
 			col.rigidbody.AddForce(Vector3.forward * thrust);
 		}
 	}
