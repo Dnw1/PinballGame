@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class Keyboard : MonoBehaviour 
@@ -29,4 +29,4 @@ public class Keyboard : MonoBehaviour
 					_rightFlipper.off();
 				}
 		}
-	}
+}
