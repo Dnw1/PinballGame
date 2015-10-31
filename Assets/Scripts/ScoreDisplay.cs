@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 //Soufyan Hassan
@@ -10,6 +10,5 @@ public class ScoreDisplay : MonoBehaviour
 	void OnGUI()
 	{
 		GUILayout.Label("Score: " + score.ToString());
-        //Debug.Log("Score made it here");
 	}
 }
