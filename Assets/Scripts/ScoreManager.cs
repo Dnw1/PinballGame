@@ -1,6 +1,7 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+//Soufyan Hassan
 
 public class ScoreManager : MonoBehaviour 
 {
