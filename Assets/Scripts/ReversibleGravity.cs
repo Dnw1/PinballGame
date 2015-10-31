@@ -8,11 +8,7 @@ public class ReversibleGravity : MonoBehaviour {
 	void Start () {
 		gravity = Physics.gravity;
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		//
-	}
+
 	void FixedUpdate()
 	{
 		Physics.gravity = gravity;
